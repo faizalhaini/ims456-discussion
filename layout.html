@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Layout</title>
+	<link rel='stylesheet' href='css/style.css' type='text/css'>
+</head>
+<body>
+
+<!--logo-->
+
+
+
+     <img src='image/blackpink2.JPG' height='150px'>
+
+     <ul>
+     	<li><a href='index.html'>Home</a></li>
+		<li><a href='personal.html'>Personal Profile</a></li>
+		<li><a href='academic background.html'>Educational Background</a></li>
+		<li><a href='phylosopy.html'>My Phylosopy</a></li>
+		<li><a href='vision and mission.html'>Vision & Mission</a></li>
+		<li><a href="working experience.html">Working & Experience</a></li>
+		<li><a href="contact me.html">Contact Me</a></li>
+
+    </ul>
+
+<!--slider-->
+<div class='slideshow-container'>
+    <div class='slides fade'>
+    	<img src='image/slider1.jpg'>
+    </div>
+
+     <div class='slides fade'>
+    	<img src='image/slider2.jpg'>
+    </div>
+
+     <div class='slides fade'>
+    	<img src='image/slider3.jpg'>
+    </div>
+
+     <div class='slides fade'>
+    	<img src='image/slider4.jpg'>
+    </div>
+	
+
+
+
+
+
+
+
+</div>
+<br>
+<div style='text-align: center'>
+	<span class='dot'></span>
+	<span class='dot'></span>
+	<span class='dot'></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+	var i;
+	var slides = document.getElementsByClassName("slides");
+	var dots = document.getElementsByClassName("dot");
+
+	    for (i = 0; i < slides.length; i++) {
+	    	slides[i].style.display = "none";
+	    }
+
+	    slideIndex++;
+	    if (slideIndex > slides.length) {slideIndex = 1}
+	    	for (i = 0; i <dots.length; i++) {
+	    	dots[i].className = dots[i].className.replace(" active");
+	    	}
+
+	    	slides[slideIndex-1].style.display = "block";
+	    	dots[slideIndex-1].className += " active";
+	    	setTimeout(showSlides, 2000);
+}
+	
+
+
+
+
+
+
+
+
+</script>
+<!--boxes-->
+<div class='box1'>
+	<img src='image/couple.png' height='150px'>
+
+</div>	
+
+<div class='box2'>
+	<img src='image/groom.png' height='150px'>
+</div>
+
+<div class='box3'>
+	<img src='image/newlyweds.png' height='150px'>
+</div>
+
+<div class='box4'>
+	<img src='image/picture.png' height='150px'>
+</div>
+
+</body>
+</html>
